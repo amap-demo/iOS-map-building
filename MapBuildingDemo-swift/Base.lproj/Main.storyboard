@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapBuildingDemo_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,45 +21,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WaQ-K4-tYY">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DI0-AN-xMe">
                                 <rect key="frame" x="20" y="592" width="150" height="45"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示建筑：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dL4-1B-J9a">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示建筑：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sv-LB-ppD">
                                         <rect key="frame" x="8" y="12.5" width="87" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jfc-33-5lU">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Lr-OX-aUl">
                                         <rect key="frame" x="93" y="7" width="51" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="bgx-Ge-F4B"/>
-                                            <constraint firstAttribute="width" constant="49" id="xkN-vP-2fQ"/>
+                                            <constraint firstAttribute="height" constant="31" id="ETa-wm-WMe"/>
+                                            <constraint firstAttribute="width" constant="49" id="FRI-Rt-WqX"/>
                                         </constraints>
                                         <connections>
-                                            <action selector="showBuildingSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="rmE-CG-jfr"/>
+                                            <action selector="showBuildingSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Al6-Ur-zBK"/>
                                         </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="702-gl-NV4"/>
-                                    <constraint firstAttribute="height" constant="45" id="Eob-Lg-Cg1"/>
-                                    <constraint firstItem="dL4-1B-J9a" firstAttribute="leading" secondItem="WaQ-K4-tYY" secondAttribute="leading" constant="8" id="NBp-Xm-kiM"/>
-                                    <constraint firstItem="Jfc-33-5lU" firstAttribute="centerY" secondItem="WaQ-K4-tYY" secondAttribute="centerY" id="fXN-oX-ob4"/>
-                                    <constraint firstAttribute="trailing" secondItem="Jfc-33-5lU" secondAttribute="trailing" constant="8" id="h7m-sV-hX0"/>
-                                    <constraint firstItem="dL4-1B-J9a" firstAttribute="centerY" secondItem="WaQ-K4-tYY" secondAttribute="centerY" id="mxI-bC-qnV"/>
+                                    <constraint firstAttribute="height" constant="45" id="4JU-uL-nNB"/>
+                                    <constraint firstItem="5Sv-LB-ppD" firstAttribute="centerY" secondItem="DI0-AN-xMe" secondAttribute="centerY" id="VMG-aE-VKY"/>
+                                    <constraint firstItem="6Lr-OX-aUl" firstAttribute="centerY" secondItem="DI0-AN-xMe" secondAttribute="centerY" id="ob6-lW-f0a"/>
+                                    <constraint firstItem="5Sv-LB-ppD" firstAttribute="leading" secondItem="DI0-AN-xMe" secondAttribute="leading" constant="8" id="su7-jQ-fI2"/>
+                                    <constraint firstAttribute="width" constant="150" id="vcK-YQ-EaI"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Lr-OX-aUl" secondAttribute="trailing" constant="8" id="wK0-1b-nux"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WaQ-K4-tYY" secondAttribute="bottom" constant="30" id="0s7-OJ-BTo"/>
-                            <constraint firstItem="WaQ-K4-tYY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="FDl-lw-mPb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DI0-AN-xMe" secondAttribute="bottom" constant="30" id="rg4-s7-W8c"/>
+                            <constraint firstItem="DI0-AN-xMe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="tpK-bO-Cfk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="WaQ-K4-tYY" id="9B8-Fj-VjC"/>
+                        <outlet property="containerView" destination="DI0-AN-xMe" id="epZ-z8-YXL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

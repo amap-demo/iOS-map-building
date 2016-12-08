@@ -14,10 +14,25 @@
 
 ## 核心难点 ##
 
+
 ```
-/* switch事件回调. */
-- (void)actionBuilding:(UISwitch *)sender
-{
-    self.mapView.showsBuildings = sender.on;
+
+`Objective-C`
+
+```
+// 建筑物是否显示
+- (IBAction)showBuildingSwitch:(id)sender {
+    UISwitch *showSwitch = (UISwitch *)sender;
+    self.mapView.showsBuildings = showSwitch.on;
 }
 ```
+
+`Swift`
+
+````
+// 建筑物是否显示
+@IBAction func showBuildingSwitch(_ sender: UISwitch) {
+    self.mapView.isShowsBuildings = sender.isOn;
+}
+
+````
