@@ -190,7 +190,6 @@
 				81EE31E01DCB2CD8004D14D4 /* Sources */,
 				81EE31E11DCB2CD8004D14D4 /* Frameworks */,
 				81EE31E21DCB2CD8004D14D4 /* Resources */,
-				886612007130C119ACB5AACB /* [CP] Embed Pods Frameworks */,
 				B3444265E922AA6E443C20A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -210,7 +209,6 @@
 				D96AE6E71DF9443200E465F9 /* Sources */,
 				D96AE6E81DF9443200E465F9 /* Frameworks */,
 				D96AE6E91DF9443200E465F9 /* Resources */,
-				CBFF3301B3D95B5B165D7E53 /* [CP] Embed Pods Frameworks */,
 				9E3A7CC3DC78622D9F0D4CD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -273,6 +271,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -319,37 +318,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		886612007130C119ACB5AACB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapBuildingDemo/Pods-MapBuildingDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9E3A7CC3DC78622D9F0D4CD1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MapBuildingDemo-swift/Pods-MapBuildingDemo-swift-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MapBuildingDemo-swift/Pods-MapBuildingDemo-swift-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapBuildingDemo-swift/Pods-MapBuildingDemo-swift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapBuildingDemo-swift/Pods-MapBuildingDemo-swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A01E78F70AA6598A33B247E1 /* [CP] Check Pods Manifest.lock */ = {
@@ -376,31 +360,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MapBuildingDemo/Pods-MapBuildingDemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MapBuildingDemo/Pods-MapBuildingDemo-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapBuildingDemo/Pods-MapBuildingDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CBFF3301B3D95B5B165D7E53 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapBuildingDemo-swift/Pods-MapBuildingDemo-swift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapBuildingDemo/Pods-MapBuildingDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F141633CA9EF0CE003013C24 /* [CP] Check Pods Manifest.lock */ = {
@@ -636,7 +605,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "./MapBuildingDemo-swift/Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -656,7 +625,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
 				SWIFT_OBJC_BRIDGING_HEADER = "./MapBuildingDemo-swift/Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
